@@ -1,46 +1,64 @@
 body {
-    background: #a855f7;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    background: #a855f7; /* Устанавливает фоновый цвет тела документа на фиолетовый */
+    display: flex; /* Использует Flexbox для выравнивания содержимого */
+    align-items: center; /* Выравнивает содержимое по вертикали по центру */
+    justify-content: center; /* Выравнивает содержимое по горизонтали по центру */
+    height: 100vh; /* Устанавливает высоту тела документа на 100% высоты окна браузера */
+    overflow: hidden; /* Скрывает любые элементы, выходящие за пределы окна */
 }
 
 span {
-    position: relative;
-    font-family: "Lato", sans-serif;
-    top: 20px;
-    color: white;
-    display: inline-block;
-    font-size: 5rem;
-    text-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #b7b7b7, 0 3px 0 #b7b7b7, 0 4px 0 #b7b7b7, 0 5px 0 #b7b7b7, 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.5);
-    animation: bounce 0.4s ease infinite alternate;
+    position: relative; /* Устанавливает относительное позиционирование для элементов span */
+    font-family: "Lato", sans-serif; /* Устанавливает шрифт для текста на "Lato" с запасным шрифтом sans-serif */
+    top: 20px; /* Устанавливает верхний отступ на 20 пикселей */
+    color: white; /* Устанавливает цвет текста на белый */
+    display: inline-block; /* Устанавливает элемент span как блочный элемент, который можно выравнивать */
+    font-size: 5rem; /* Устанавливает размер шрифта на 5rem */
+    text-shadow: 0 1px 0 #b7b7b7, /* Добавляет тень к тексту с различными смещениями и цветами */
+                 0 2px 0 #b7b7b7,
+                 0 3px 0 #b7b7b7,
+                 0 4px 0 #b7b7b7,
+                 0 5px 0 #b7b7b7,
+                 6px 0 transparent, /* Создает эффект размытия тени */
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0, 0, 0, 0.5); /* Добавляет более глубокую тень */
+    animation: bounce 0.4s ease infinite alternate; /* Применяет анимацию "bounce" с длительностью 0.4 секунды, бесконечно и с чередованием */
 }
 
 h1 span:nth-child(2) {
-    animation-delay: 0.1s;
+    animation-delay: 0.1s; /* Устанавливает задержку анимации для второго элемента span на 0.1 секунды */
 }
 
 h1 span:nth-child(3) {
-    animation-delay: 0.2s;
+    animation-delay: 0.2s; /* Устанавливает задержку анимации для третьего элемента span на 0.2 секунды */
 }
 
 h1 span:nth-child(4) {
-    animation-delay: 0.3s;
+    animation-delay: 0.3s; /* Устанавливает задержку анимации для четвертого элемента span на 0.3 секунды */
 }
 
 h1 span:nth-child(5) {
-    animation-delay: 0.4s;
+    animation-delay: 0.4s; /* Устанавливает задержку анимации для пятого элемента span на 0.4 секунды */
 }
 
 h1 span:nth-child(6) {
-    animation-delay: 0.5s;
+    animation-delay: 0.5s; /* Устанавливает задержку анимации для шестого элемента span на 0.5 секунды */
 }
 
 @keyframes bounce {
     100% {
-        top: -20px;
-        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc, 0 60px 30px rgba(0, 0, 0, 0.3);
+        top: -20px; /* Устанавливает конечное положение элемента на 20 пикселей выше его начального положения */
+        text-shadow: 0 1px 0 #ccc, /* Изменяет тень текста при анимации */
+                     0 2px 0 #ccc,
+                     0 3px 0 #ccc,
+                     0 4px 0 #ccc,
+                     0 5px 0 #ccc,
+                     0 6px 0 #ccc,
+                     0 7px 0 #ccc,
+                     0 8px 0 #ccc,
+                     0 9px 0 #ccc,
+                     0 60px 30px rgba(0, 0, 0, 0.3); /* Добавляет более глубокую тень при анимации */
     }
 }
